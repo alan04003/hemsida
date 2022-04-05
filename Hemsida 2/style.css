@@ -1,0 +1,29 @@
+body {
+    background-color: antiquewhite;
+    margin: 0;
+}
+
+ul {
+    list-style-type: none; /* har ingen typ av speciel lista */
+    background-color:skyblue; /* backgrund färgen till listan*/
+    margin-left: auto; /* margin har jag på auto*/
+    margin-right: auto;
+    max-width: 2000px; /* listan kan inte vara längre än 700px */
+  }
+  
+  li {
+    display: inline-block; /* de lådorna som vissas i listan */
+    margin-left: auto; /* margin auto för att få det i mitten */
+    padding-top: 0px; /* ingen mellanrum till kanterna*/
+    padding-bottom: 0px;
+    text-align: center; /* texten kommer i mitten av lådorna */
+  }
+  
+  li a { /* texten i listan */
+    display: block; /* de blir till*/
+    color: white; /* färgen av texten */
+    text-align: center; /* texten kommer i mitten */
+    padding: 14px 16px; /* hur mycket mellanrum det ska vara mellan backround och under texten */
+    text-decoration: none; 
+    font-family:Verdana, Geneva, Tahoma, sans-serif; /* textens utseende i listan */
+  }
