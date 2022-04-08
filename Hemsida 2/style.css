@@ -3,12 +3,24 @@ body {
     margin: 0;
 }
 
+header {
+  background-color: skyblue;
+  text-align: left;
+} 
+
+.headerimg{
+  text-align: left;
+  margin-left: 0px;
+}
+
 ul {
     list-style-type: none; /* har ingen typ av speciel lista */
     background-color:skyblue; /* backgrund färgen till listan*/
     margin-left: auto; /* margin har jag på auto*/
     margin-right: auto;
+    margin-top: auto;
     max-width: 2000px; /* listan kan inte vara längre än 700px */
+    text-align: center;
   }
   
   li {
@@ -22,8 +34,16 @@ ul {
   li a { /* texten i listan */
     display: block; /* de blir till*/
     color: white; /* färgen av texten */
-    text-align: center; /* texten kommer i mitten */
+    text-align: center; /* texten kommer i mitten */  
     padding: 14px 16px; /* hur mycket mellanrum det ska vara mellan backround och under texten */
     text-decoration: none; 
     font-family:Verdana, Geneva, Tahoma, sans-serif; /* textens utseende i listan */
+    font-size: 15px;
+  }
+
+  .tl{
+    width: 300px;
+    margin-left: 200px;
+    font-size: 20px;
+    font-family: 'Courier New', Courier, monospace;
   }
