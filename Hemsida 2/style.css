@@ -56,3 +56,35 @@ ul {
   text-align: center;
   max-width: 600px;
 }
+
+table,th,td{ 
+  border: 3px solid black; 
+  border-collapse: collapse;
+  }
+  
+  /* Ändrar storlen i table*/
+.table1{ 
+  table-layout: auto;
+  width: 50%;
+  height: 300px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10%; /* hur mycket avstånd ska finnas från toppen och table*/
+}
+  
+th{
+  background-color:seashell; /* Sätter en seperat backgrunds färg på th*/
+}
+  
+
+tr:nth-child(odd) {
+background-color: #FF66B2; /* all tr rader som är udda blir #FF66B2 färgen */
+}
+
+tr:nth-child(even){
+  background-color: #23d5ab; /* alla jämna tr rader blir #23d5ab färgen*/
+}
+
+td:nth-child(even) {
+  text-align: right; /* alla td jämna rader får texten på höger */
+}
