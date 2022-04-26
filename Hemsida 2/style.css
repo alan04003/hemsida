@@ -48,7 +48,7 @@ ul {
   padding: 200px;
   }
 
-.t{
+.top{
   background-color: rgba(255, 255, 255, 0.8);
   border: 1px solid rgba(0, 0, 0, 0.8);
   padding: 20px;
@@ -63,7 +63,7 @@ table,th,td{
   }
   
   /* Ändrar storlen i table*/
-.table1{ 
+.tablespecs{ 
   table-layout: auto;
   width: 50%;
   height: 300px;
