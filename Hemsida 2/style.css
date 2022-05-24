@@ -88,3 +88,7 @@ tr:nth-child(even){
 td:nth-child(even) {
   text-align: right; /* alla td jämna rader får texten på höger */
 }
+
+tr{
+  text-align: center;
+}
