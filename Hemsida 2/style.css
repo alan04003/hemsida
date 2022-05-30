@@ -11,6 +11,8 @@ header {
 .headerimg{
   text-align: left;
   margin-left: 0px;
+  height: 100px;
+  width: 100px;
 }
 
 ul {
@@ -21,32 +23,52 @@ ul {
     margin-top: auto;
     max-width: 2000px; /* listan kan inte vara längre än 700px */
     text-align: center;
-  }
+}
   
-  li {
-    display: inline-block; /* de lådorna som vissas i listan */
-    margin-left: auto; /* margin auto för att få det i mitten */
-    padding-top: 0px; /* ingen mellanrum till kanterna*/
-    padding-bottom: 0px;
-    text-align: center; /* texten kommer i mitten av lådorna */
-  }
+.globalmenu {
+  display: inline-block; /* de lådorna som vissas i listan */
+  margin-left: auto; /* margin auto för att få det i mitten */
+  padding-top: 0px; /* ingen mellanrum till kanterna*/
+  padding-bottom: 0px;
+  text-align: center; /* texten kommer i mitten av lådorna */
+}
   
-  li a { /* texten i listan */
-    display: block; /* de blir till*/
-    color: white; /* färgen av texten */
-    text-align: center; /* texten kommer i mitten */  
-    padding: 14px 16px; /* hur mycket mellanrum det ska vara mellan backround och under texten */
-    text-decoration: none; 
-    font-family:Verdana, Geneva, Tahoma, sans-serif; /* textens utseende i listan */
-    font-size: 15px;
-  }
+li a { /* texten i listan */
+  display: block; /* de blir till*/
+  color: white; /* färgen av texten */
+  text-align: center; /* texten kommer i mitten */  
+  padding: 14px 16px; /* hur mycket mellanrum det ska vara mellan backround och under texten */
+  text-decoration: none; 
+  font-family:Verdana, Geneva, Tahoma, sans-serif; /* textens utseende i listan */
+  font-size: 15px;
+}
 
-.grid{
+a:visited{
+  color: black;
+}
+
+a:hover{
+  background-color: blue;
+}
+
+a:active{
+  background-color: yellow;
+}
+
+.grid1{
   display: grid;
   grid-template-columns: auto auto;   
   column-gap: 40px;
   padding: 200px;
-  }
+}
+
+.grid2{
+  display: grid;
+  grid-template-columns: auto auto auto;  
+  column-gap: 10%;
+  margin-left: 10%;
+  line-height: 3em;
+}
 
 .top{
   background-color: rgba(255, 255, 255, 0.8);
@@ -60,13 +82,14 @@ ul {
 table,th,td{ 
   border: 3px solid black; 
   border-collapse: collapse;
-  }
+  padding: 15px;
+}
   
-  /* Ändrar storlen i table*/
+  
 .tablespecs{ 
   table-layout: auto;
-  width: 50%;
-  height: 300px;
+  width: 60%;
+  height: 70%;
   margin-left: auto;
   margin-right: auto;
   margin-top: 10%; /* hur mycket avstånd ska finnas från toppen och table*/
@@ -78,7 +101,7 @@ th{
   
 
 tr:nth-child(odd) {
-background-color: #FF66B2; /* all tr rader som är udda blir #FF66B2 färgen */
+  background-color: #FF66B2; /* all tr rader som är udda blir #FF66B2 färgen */
 }
 
 tr:nth-child(even){
@@ -86,9 +109,21 @@ tr:nth-child(even){
 }
 
 td:nth-child(even) {
-  text-align: right; /* alla td jämna rader får texten på höger */
+  text-align: center; /* alla td jämna rader får texten på höger */
 }
 
 tr{
   text-align: center;
 }
+
+.kamera{
+  vertical-align: text-bottom;
+  width: 20px; 
+  height: 18px; 
+}
+
+caption{
+  font-size: 25px;
+  font-weight: bold;
+}
+
