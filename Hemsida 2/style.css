@@ -76,6 +76,13 @@ a:active{
   border-radius: 25px;
 }
 
+.photo{
+  border: 2px solid black;
+  border-collapse: collapse; 
+  border-radius: 25px;
+  margin-right: 40%;  
+}
+
 .top{
   background-color: rgba(255, 255, 255, 0.8);
   border: 1px solid rgba(0, 0, 0, 0.8);
@@ -134,7 +141,3 @@ caption{
   font-weight: bold;
 }
 
-.phone.jpg{
-  height: 50%;
-  width: 50%;
-}
