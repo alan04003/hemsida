@@ -5,60 +5,75 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css"> <!-- länkar min css--> 
-    <title>Hemsida</title>
+    <title>specs table</title>
 </head>
 <body>
     
     <header> 
         <ul>
-            <li><img src="loga.png" height="100" width="100" class="headerimg" ></li>
-            <li><a href="index.html">Telefoner</a></li>
-            <li><a href="specs.html">Specs</a></li>
-            <li><a href="video.html">Video</a></li>
-            <li><a href="lista.html">Lista</a></li>
-            <li><a href="sussy.html">??</a></li>
+            <li class="globalmenu"><img src="loga.png" class="headerimg" ></li>
+            <li class="globalmenu"><a href="index.html">Telefoner</a></li>
+            <li class="globalmenu"><a href="specs.html">Specs</a></li>
+            <li class="globalmenu"><a href="video.html">Video</a></li>
+            <li class="globalmenu"><a href="lista.html">Lista</a></li>
+            <li class="globalmenu"><a href="sussy.html">??</a></li>
         </ul>
     </header>
 
     
     <main>
         <table class="tablespecs">  <!-- Första taggen för att skapa en table, har också en klass för den så jag kan ändra i css-->
-            <tr> <!-- skapar en rad i tabelen -->
-                <th>Telefonerna</th>
-                <th>Processor</th> <!-- skapar en rad som går höger i första tr, th är med tjock text och brukar användas på toppen eller första raden i en table-->
-                <th>Står emot vatten</th> <!-- en till rad i th-->
-                <th>skärm</th>
-                <th>kamera</th>
-            </tr>
-            <tr> <!-- en till rad i table-->
-                <td>Iphone 13</td> <!-- td är inet tjock text-->
-                <td>A15 Bionic-chip</td>
-                <td>maxdjup 6 meter i upp till 30 minuter</td>
-                <td>Super Retina XDR-skärm</td>
-                <td>helt ok</td>
-            </tr>
-            <tr > 
-                <td>Samsung S22 Ultra</td>
-                <td>Exynos 2200</td>
-                <td>dust/water resistant (up to 1.5m for 30 mins)</td>
-                <td>Dynamic AMOLED 2X, 120Hz, HDR10+, 1750 nits</td>
-                <td>A+ gandka bra</td>
-            </tr>
-            <tr> 
-                <td>Xiaomi 12 Pro</td>
-                <td>Qualcomm SM8450 Snapdragon 8 Gen 1</td>
-                <td>ganska djupt kanske 3,31245km</td>
-                <td>LTPO AMOLED, 1B colors, 120Hz, Dolby Vision, HDR10+, 1000 nits (HBM), 1500 nits </td>
-                <td>50 MP, f/1.9, 24mm (wide), 1/1.28", 1.22µm, Dual Pixel PDAF, OIS
-                    50 MP, f/1.9, 48mm (telephoto), PDAF, 2x optical zoom
-                    50 MP, f/2.2, 115˚ (ultrawide)</td>
-            </tr>
-            <tr>
-                <td>Huawei P40 pro</td>
-                <td>Kirin 990 5G</td>
-                <td>dust/water resistant (up to 1.5m for 30 mins)</td>
-                <td></td>
-            </tr>
+            <thead>
+                <caption>Specs på telefoner</caption>
+                <tr> <!-- skapar en rad i tabelen -->
+                    <th>Telefonerna</th>
+                    <th>Processor</th> <!-- skapar en rad som går höger i första tr, th är med tjock text och brukar användas på toppen eller första raden i en table-->
+                    <th>Står emot vatten</th> <!-- en till rad i th-->
+                    <th>skärm</th>
+                    <th>kamera <img class="kamera" src="kamera.jpg"></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr> <!-- en till rad i table-->
+                    <td>Iphone 13</td> <!-- td är inet tjock text-->
+                    <td>A15 Bionic-chip</td>
+                    <td>maxdjup 6 meter i upp till 30 minuter</td>
+                    <td>Super Retina XDR-skärm</td>
+                    <td>helt ok</td>
+                </tr>
+                <tr > 
+                    <td>Samsung S22 Ultra</td>
+                    <td>Octa-core</td>
+                    <td>dust/water resistant (up to 1.5m for 30 mins)</td>
+                    <td>Dynamic AMOLED 2X, 120Hz, HDR10+, 1750 nits</td>
+                    <td>A+ gandka bra</td>
+                </tr>
+                <tr> 
+                    <td>Xiaomi 12 Pro</td>
+                    <td>Octa-core</td>
+                    <td>ganska djupt kanske 3,31245km</td>
+                    <td>LTPO AMOLED, 1B colors, 120Hz, Dolby Vision, HDR10+, 1000 nits (HBM), 1500 nits </td>
+                    <td>50 MP, f/1.9, 24mm (wide), 1/1.28", 1.22µm, Dual Pixel PDAF, OIS
+                        50 MP, f/1.9, 48mm (telephoto), PDAF, 2x optical zoom
+                        50 MP, f/2.2, 115˚ (ultrawide)</td>
+                </tr>
+                <tr>
+                    <td>Huawei P40</td>
+                    <td>Kirin 990 5G </td>
+                    <td>oled</td>
+                    <td>inte lika bra som nokia</td>
+                    <td>flera st</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td>bäst?</td>
+                    <td>iPhone 13</td>
+                    <td>iPhone 13</td>
+                    <td>iPhone 13</td>
+                    <td>iPhone 13</td>
+                </tr>
+            </tfoot>
         </table>
     </main>
 
