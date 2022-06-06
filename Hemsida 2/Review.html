@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css"> <!-- länkar min css--> 
+    <title>Review</title>
+</head>
+<body>
+    <header> 
+        <div  class="headergrid">
+            <nav>
+            <ul>
+                <li class="globalmenu"><a href="index.html">Telefoner</a></li>
+                <li class="globalmenu"><a href="specs.html">Specs</a></li>
+                <li class="globalmenu"><a href="video.html">Video</a></li>
+                <li class="globalmenu"><a href="lista.html">Lista</a></li>
+                <li class="globalmenu"><a href="Review.html">Review</a></li>
+            </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <form action="/review_rev.php" method="get" target="_blank">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email"><br><br>
+            <label for="pwd">Password:</label>
+            <input type="password" id="pwd" name="pwd" minlength="8"><br><br>
+            <label for="fname">First name:</label>
+            <input type="text" id="fname" name="fname"><br><br>
+            <label for="lname">Last name:</label>
+            <input type="text" id="lname" name="lname"><br><br>
+            <P>please leavea review</P>
+            <textarea id="review" name="review" rows="4" cols="50"></textarea><br><br>
+            <p>what phones have you owned?</p>
+            <input type="checkbox" id="phone1" name="phone1" value="iphone">
+            <label for="phone1"> iPhone</label><br>
+            <input type="checkbox" id="phone2" name="phone2" value="Samsung">
+            <label for="phone2"> Samsung</label><br>
+            <input type="checkbox" id="phone3" name="phone3" value="Xiaomi">
+            <label for="phone3"> Xiaomi</label><br>
+            <input type="checkbox" id="phone4" name="phone4" value="Huawei">
+            <label for="phone4"> Huawei</label><br><br>
+            <p>What is the best phone?</p>
+            <input type="radio" id="phone11" name="phone" value="iphone">
+            <label for="phone11"> iPhone</label><br>
+            <input type="radio" id="phone22" name="phone" value="Samsung">
+            <label for="phone22"> Samsung</label><br>
+            <input type="radio" id="phone33" name="phone" value="Xiaomi">
+            <label for="phone33"> Xiaomi</label><br>
+            <input type="radio" id="phone44" name="phone" value="Huawei">
+            <label for="phone44"> Huawei</label><br>
+            <input type="submit" value="Submit">
+      </form>
+    </main>
+
+    <footer>
+        <div class="footergrid">
+            <div class="footer1"><p>Alexander Andersson average iphone enjoyer</p></div>
+            <div class="footer2"><img class="iphone" src="iphone.png" alt="apple"></div>
+        </div>
+    </footer>
+      
+</body>
+</html>

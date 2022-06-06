@@ -8,29 +8,31 @@
     <title>specs table</title>
 </head>
 <body>
-    
     <header> 
-        <ul>
-            <li class="globalmenu"><img src="loga.png" class="headerimg" ></li>
-            <li class="globalmenu"><a href="index.html">Telefoner</a></li>
-            <li class="globalmenu"><a href="specs.html">Specs</a></li>
-            <li class="globalmenu"><a href="video.html">Video</a></li>
-            <li class="globalmenu"><a href="lista.html">Lista</a></li>
-            <li class="globalmenu"><a href="sussy.html">??</a></li>
-        </ul>
+        <div  class="headergrid">
+            <nav>
+            <ul>
+                <li class="globalmenu"><a href="index.html">Telefoner</a></li>
+                <li class="globalmenu"><a href="specs.html">Specs</a></li>
+                <li class="globalmenu"><a href="video.html">Video</a></li>
+                <li class="globalmenu"><a href="lista.html">Lista</a></li>
+                <li class="globalmenu"><a href="Review.html">Review</a></li>
+            </ul>
+            </nav>
+        </div>
     </header>
 
     
     <main>
         <table class="tablespecs">  <!-- Första taggen för att skapa en table, har också en klass för den så jag kan ändra i css-->
+            <caption>Specs på telefoner</caption>
             <thead>
-                <caption>Specs på telefoner</caption>
                 <tr> <!-- skapar en rad i tabelen -->
                     <th>Telefonerna</th>
                     <th>Processor</th> <!-- skapar en rad som går höger i första tr, th är med tjock text och brukar användas på toppen eller första raden i en table-->
                     <th>Står emot vatten</th> <!-- en till rad i th-->
                     <th>skärm</th>
-                    <th>kamera <img class="kamera" src="kamera.jpg"></th>
+                    <th>kamera <img class="kamera" src="kamera.jpg" alt="kamera"></th>
                 </tr>
             </thead>
             <tbody>
@@ -77,5 +79,11 @@
         </table>
     </main>
 
+    <footer>
+        <div class="footergrid">
+            <div class="footer1"><p>Alexander Andersson average iphone enjoyer</p></div>
+            <div class="footer2"><img class="iphone" src="iphone.png" alt="apple"></div>
+        </div>
+    </footer>
 </body>
 </html>

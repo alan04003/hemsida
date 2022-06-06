@@ -1,28 +1,49 @@
 body {
-    background-color: antiquewhite;
-    margin: 0;
+  background-color: antiquewhite;
+  margin: 0;
 }
 
-header {
-  background-color: skyblue;
+@media only screen and (max-width: 1200px){
+  body{
+    background-color: rgba(168, 102, 222, 0.5);
+  }
+}
+
+.headergrid {
+  color: black;
+  background-color: hsla(290,60%,70%,0.3);
   text-align: left;
+  height: 100px;
+  padding: 0;
 } 
 
-.headerimg{
-  text-align: left;
-  margin-left: 0px;
-  height: 100px;
-  width: 100px;
+.footergrid{
+  grid-template-areas: "text" "side";
+  background-color: blueviolet; 
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
 }
 
+.footer1{
+  grid-area: text;
+}
+
+.footer2{
+  grid-area: side; 
+}
+
+.iphone{
+  height: 50px;
+  width: 50px;
+}
 ul {
-    list-style-type: none; /* har ingen typ av speciel lista */
-    background-color:skyblue; /* backgrund färgen till listan*/
-    margin-left: auto; /* margin har jag på auto*/
-    margin-right: auto;
-    margin-top: auto;
-    max-width: 2000px; /* listan kan inte vara längre än 700px */
-    text-align: center;
+  list-style-type: none; /* har ingen typ av speciel lista */
+  margin-left: auto; /* margin har jag på auto*/
+  margin-right: auto;
+  margin-top: 0px;
+  text-align: center;
 }
   
 .globalmenu {
@@ -32,15 +53,22 @@ ul {
   padding-bottom: 0px;
   text-align: center; /* texten kommer i mitten av lådorna */
 }
-  
+
+.localmenu{
+  display: inline-block; /* de lådorna som vissas i listan */
+  margin-left: 0px; /* margin auto för att få det i mitten */
+  padding-top: 0px; /* ingen mellanrum till kanterna*/
+  padding-bottom: 0px;
+}
+
 li a { /* texten i listan */
   display: block; /* de blir till*/
   color: white; /* färgen av texten */
   text-align: center; /* texten kommer i mitten */  
-  padding: 14px 16px; /* hur mycket mellanrum det ska vara mellan backround och under texten */
   text-decoration: none; 
-  font-family:Verdana, Geneva, Tahoma, sans-serif; /* textens utseende i listan */
-  font-size: 15px;
+  font-family: Arial, Helvetica, sans-serif; /* textens utseende i listan */
+  padding: 14px 16px; /* hur mycket mellanrum det ska vara mellan backround och under texten */
+  font-size: 20px;
 }
 
 a:visited{
@@ -48,11 +76,11 @@ a:visited{
 }
 
 a:hover{
-  background-color: blue;
+  color: hsl(19, 100%, 50%);
 }
 
 a:active{
-  background-color: yellow;
+  background-color: black;
 }
 
 .grid1{
@@ -70,19 +98,67 @@ a:active{
   line-height: 3em;
 }
 
+.grid3{
+  display: grid;
+  grid-template-columns: 1fr 2fr;   
+  margin-left: 36em;
+  grid-template-areas: 
+  "menu"
+  "content"
+  ;
+}
+
+.grid-item1{
+  grid-area: menu; 
+}
+
+.grid-item2{
+  grid-area: content;
+}
+
+
 .List1{
   border: 2px solid black;
   border-collapse: collapse; 
   border-radius: 25px;
+  height: 500px
 }
+
 
 .photo{
   border: 2px solid black;
   border-collapse: collapse; 
-  border-radius: 25px;
-  margin-right: 40%;  
+  border-radius: 1.5em;
+  height: 50ex; 
+  width: 45ex;
 }
 
+
+.video{
+  height: 1000px;
+  width: 700px;
+  border: 3px solid blue;
+}
+
+
+.video2{
+  height: 1000px;
+  width: 700px;
+  border: 3px solid purple;
+}
+
+
+.video3{
+  height: 1000px;
+  width: 700px;
+  border: 3px solid orange; 
+}
+
+.video4{
+  height: 1000px;
+  width: 700px;
+  border: 3px solid green;
+}
 .top{
   background-color: rgba(255, 255, 255, 0.8);
   border: 1px solid rgba(0, 0, 0, 0.8);
@@ -92,6 +168,7 @@ a:active{
   max-width: 600px;
   border-radius: 10px;
 }
+
 
 table,th,td{ 
   border: 3px solid black; 
@@ -113,7 +190,6 @@ th{
   background-color:seashell; /* Sätter en seperat backgrunds färg på th*/
 }
   
-
 tr:nth-child(odd) {
   background-color: #FF66B2; /* all tr rader som är udda blir #FF66B2 färgen */
 }
@@ -130,11 +206,13 @@ tr{
   text-align: center;
 }
 
+
 .kamera{
   vertical-align: text-bottom;
   width: 20px; 
   height: 18px; 
 }
+
 
 caption{
   font-size: 25px;
