@@ -110,10 +110,10 @@ a:active{
 
 
 .List1{
-  border: 2px solid black;
-  border-collapse: collapse; 
-  border-radius: 25px;
-  height: 500px
+  border: 2px solid black; /*tjockleken och färgen */
+  border-collapse: collapse; /*inte flera linjer utan de går ihop*/
+  border-radius: 25px; /*rundade hörn*/
+  height: 500px /*höjden */
 }
 
 
