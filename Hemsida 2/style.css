@@ -1,43 +1,35 @@
-body {
-  background-color: antiquewhite;
-  margin: 0;
+body { /*ändra body*/
+  background-color: #faebd7;
+  margin: 0%;
 }
 
-@media only screen and (max-width: 1200px){
+@media only screen and (max-width: 1200px){ /*när fönstret blir mindre än 1200 px så ändras det man valt*/
   body{
-    background-color: rgba(168, 102, 222, 0.5);
+    background-color: rgba(168, 102, 222, 0.5); /*ändrar till den rgba färgen */
   }
 }
 
-.headergrid {
-  color: black;
-  background-color: hsla(290,60%,70%,0.3);
+.headergrid { 
+  color: black; /*färgen svart på texten i griden*/
+  background-color: hsla(290,60%,70%,0.3); /*backgrunds färgen */
   text-align: left;
-  height: 100px;
-  padding: 0;
+  height: 80px; /*hur många pixlar i i height den ska vara*/
 } 
 
 .footergrid{
-  grid-template-areas: "text" "side";
   background-color: blueviolet; 
   text-align: center;
-  position: fixed;
-  bottom: 0;
-  width: 100%;
+  position: fixed; /**/
+  bottom: 0%; /*den stanar på botten */
+  width: 100%; 
 }
 
-.footer1{
-  grid-area: text;
-}
-
-.footer2{
-  grid-area: side; 
-}
 
 .iphone{
   height: 50px;
   width: 50px;
 }
+
 ul {
   list-style-type: none; /* har ingen typ av speciel lista */
   margin-left: auto; /* margin har jag på auto*/
@@ -72,21 +64,21 @@ li a { /* texten i listan */
 }
 
 a:visited{
-  color: black;
+  color: black /*färgen efter man har tryckt på en länk */
 }
 
 a:hover{
-  color: hsl(19, 100%, 50%);
+  color: hsl(19, 100%, 50%); /*färgen när du håller över länken */
 }
 
 a:active{
-  background-color: black;
+  background-color: black; /*när du trycker */
 }
 
 .grid1{
-  display: grid;
-  grid-template-columns: auto auto;   
-  column-gap: 40px;
+  display: grid; /**/
+  grid-template-columns: auto auto;  /*avståndet och vart de kommer är auto*/ 
+  column-gap: 40px; /*avståndet mellan de grid items*/
   padding: 200px;
 }
 
@@ -101,19 +93,19 @@ a:active{
 .grid3{
   display: grid;
   grid-template-columns: 1fr 2fr;   
-  margin-left: 36em;
-  grid-template-areas: 
+  margin-left: 36em; /*den håller sig 36 em ifrån vänster sida*/
+  grid-template-areas: /*säger hur placeringen kommer att vara */
   "menu"
   "content"
   ;
 }
 
-.grid-item1{
-  grid-area: menu; 
+.grid-item1{        
+  grid-area: menu; /*menu som är kopplat till den över */
 }
 
 .grid-item2{
-  grid-area: content;
+  grid-area: content;/*samma här */
 }
 
 
@@ -203,14 +195,14 @@ td:nth-child(even) {
 }
 
 tr{
-  text-align: center;
+  text-align: center; /*texten cenreras i tr*/
 }
 
 
 .kamera{
-  vertical-align: text-bottom;
-  width: 20px; 
-  height: 18px; 
+  vertical-align: text-bottom;/*kameran alignar med botten av raden */
+  width: 20px; /*storleken*/
+  height: 18px; /*storleken */
 }
 
 

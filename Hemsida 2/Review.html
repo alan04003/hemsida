@@ -23,19 +23,19 @@
     </header>
 
     <main>
-        <form action="/review_rev.php" method="get" target="_blank">
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email"><br><br>
+        <form action="/review_rev.php" method="get" target="_blank"> <!--action säger vart datan ska skickat, method hur den ska skickas och target, taget är vart de kommer öppnas(_blank öppnar det i en ny window eller tab)-->
+            <label for="email">Email:</label> <!--label används för att skapa labels för artiklar, for specificerar vilken form element en label ska ha -->
+            <input type="email" id="email" name="email"><br><br> <!-- input är där användaren kan säta in data och id används för att koppla det till en label, type specificerar vilken typ av element som ska visas, har två breaks för två st radbyte-->
             <label for="pwd">Password:</label>
-            <input type="password" id="pwd" name="pwd" minlength="8"><br><br>
+            <input type="password" id="pwd" name="pwd" minlength="8"><br><br> <!--name används som en referens, min lenght används för säga hur minst hur många karaktärer måste vara med-->
             <label for="fname">First name:</label>
             <input type="text" id="fname" name="fname"><br><br>
             <label for="lname">Last name:</label>
             <input type="text" id="lname" name="lname"><br><br>
             <P>please leavea review</P>
-            <textarea id="review" name="review" rows="4" cols="50"></textarea><br><br>
+            <textarea id="review" name="review" rows="4" cols="50"></textarea><br><br><!--textarea används för att difinera multi-line text input control, id attrubute används för att koppla det med en label-->
             <p>what phones have you owned?</p>
-            <input type="checkbox" id="phone1" name="phone1" value="iphone">
+            <input type="checkbox" id="phone1" name="phone1" value="iphone"><!--checkbox kan man checka flera gånger och man har olika name värden på alla -->
             <label for="phone1"> iPhone</label><br>
             <input type="checkbox" id="phone2" name="phone2" value="Samsung">
             <label for="phone2"> Samsung</label><br>
@@ -44,7 +44,7 @@
             <input type="checkbox" id="phone4" name="phone4" value="Huawei">
             <label for="phone4"> Huawei</label><br><br>
             <p>What is the best phone?</p>
-            <input type="radio" id="phone11" name="phone" value="iphone">
+            <input type="radio" id="phone11" name="phone" value="iphone"><!--radio kan man bara välja en och de har samma name  -->
             <label for="phone11"> iPhone</label><br>
             <input type="radio" id="phone22" name="phone" value="Samsung">
             <label for="phone22"> Samsung</label><br>
@@ -52,7 +52,7 @@
             <label for="phone33"> Xiaomi</label><br>
             <input type="radio" id="phone44" name="phone" value="Huawei">
             <label for="phone44"> Huawei</label><br>
-            <input type="submit" value="Submit">
+            <input type="submit" value="Submit"> <!--submit blir som en knapp och när man trycker där ska informationen skickas till servrarna-->
       </form>
     </main>
 
