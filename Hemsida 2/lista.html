@@ -26,7 +26,7 @@
         <div class="grid2">
             <div class="List1">
                 <article> <!--använder för att specificera en grupp av innehåll -->
-                    <h1>Phones</h1> <!--en rubrik för listan -->
+                    <h1 id="rubrik">Phones</h1> <!--en rubrik för listan -->
                     <ol> <!--definerar en orderad lista-->
                         <li>iPhone 13</li> <!--li är en artikel i listan -->
                         <li>Samsung S22 Ultra </li>
@@ -61,15 +61,21 @@
                 <figure> <!--specificerar ett område där man har en lägger bilder, diagram eller code listing -->
                     <img src="phone.png" alt="phone img">
                 </figure>
+
+                <audio controls>
+                    <source src="iphone-sound.mp3" type="audio/mpeg">
+                </audio>
+                <div id="myDIV">
+                    <div id="blueDIV">Jobbigt ljud ovan.</div>
+                </div>
             </div>
+            
         </div>
     </main>
 
     <footer> 
-        <div class="footergrid">
-            <div class="footer1"><p>Alexander Andersson average iphone enjoyer</p></div>
-            <div class="footer2"><img class="iphone" src="iphone.png" alt="apple"></div>
-        </div>
+        <p>Alexander Andersson average iphone enjoyer</p>
+        <img class="iphone" src="iphone.png" alt="apple">
     </footer>
 
 

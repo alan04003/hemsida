@@ -3,11 +3,6 @@ body { /*ändra body*/
   margin: 0%;
 }
 
-@media only screen and (max-width: 1200px){ /*när fönstret blir mindre än 1200 px så ändras det man valt*/
-  body{
-    background-color: rgba(168, 102, 222, 0.5); /*ändrar till den rgba färgen */
-  }
-}
 
 .headergrid { 
   color: black; /*färgen svart på texten i griden*/
@@ -16,7 +11,7 @@ body { /*ändra body*/
   height: 80px; /*hur många pixlar i i height den ska vara*/
 } 
 
-.footergrid{
+footer{
   background-color: blueviolet; 
   text-align: center;
   position: fixed; /**/
@@ -116,6 +111,13 @@ a:active{
   height: 500px /*höjden */
 }
 
+ol >:first-child{
+  font-style: bold;
+  color:coral;
+}
+#rubrik{
+  color: orange;
+}
 
 .photo{
   border: 2px solid black;
@@ -125,6 +127,12 @@ a:active{
   width: 45ex;
 }
 
+p::after {
+  content: " -_-";
+  background-color: yellow;
+  color: red;
+  font-weight: bold;
+}
 
 .video{
   height: 1000px;
@@ -211,3 +219,36 @@ caption{
   font-weight: bold;
 }
 
+#myDIV {
+  height:300px;
+}
+#blueDIV {
+  position:relative;
+  width:100px;
+  padding:10px;
+  background-color:lightblue;
+  transform: skew(10deg,10deg);
+}
+
+@keyframes example {
+  from {background-color: #23d5ab;}
+  to {background-color: #FF66B2;}
+}
+
+/* The element to apply the animation to */
+.animation {
+  text-align: center;
+  width: 100%;
+  height: 100px;
+  background-color: #FF66B2;
+  animation-name: example;
+  animation-duration: 4s;
+  font-size: larger;
+}
+
+
+@media only screen and (max-width: 1200px){ /*när fönstret blir mindre än 1200 px så ändras det man valt*/
+  body{
+    background-color: rgba(168, 102, 222, 0.5); /*ändrar till den rgba färgen */
+  }
+}
